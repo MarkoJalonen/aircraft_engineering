@@ -6,7 +6,7 @@ T_0 = Constants.T_0.value
 P_0 = Constants.P_0.value
 L_0 = Constants.L_0.value
 
-def temperature(height):
+def temperature(height: float) -> float:
     T = 0
     match height:
         case 0: 
