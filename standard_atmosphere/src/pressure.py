@@ -11,7 +11,7 @@ R = Constants.R.value
 P_1 = Constants.P_1.value
 AIR_EXP = Constants.AIR_EXP.value
 
-def pressure(height: float) -> float:
+def pressure(height: int) -> float:
     p = 0
     match height:
         case 0: 

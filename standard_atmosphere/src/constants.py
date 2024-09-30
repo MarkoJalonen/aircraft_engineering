@@ -4,9 +4,9 @@ class Constants(Enum):
     R: float = 287.04              # J/K⋅kg
     L_0: float = -0.0065           # K/m
     T_0: float = 288.15            # K
-    P_0: float = 101325.0          # J/m²
+    P_0: float = 101325.0          # N/m²
+    P_1: float = 22653.0           # N/m²
     G_0: float = 9.81              # m/s²
-    P_1: float = 22653.0           # J/m²
     RHO_0: float = 1.225           # kg/m³
     RHO_1: float = 0.3639          # kg/m³
     H_1: float = 11000.0           # m
