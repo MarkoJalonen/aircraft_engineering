@@ -1,4 +1,8 @@
-"""Constants for the atmosphere at different levels."""
+"""File containing constants for the atmosphere.
+
+These are used to calculate the different qualities of atmosphere
+at different heights. 
+"""
 
 R: float = 287.04              # J/K⋅kg
 L_0: float = -0.0065           # K/m

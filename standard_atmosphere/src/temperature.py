@@ -1,4 +1,6 @@
-from constants import H_1, H_2, T_0, P_0, L_0
+"""This module salculates the temperature at given height."""
+
+from constants import H_1, H_2, T_0, L_0
 
 def temperature(height: int) -> float:
     """Calculates the temperature at given height
@@ -16,7 +18,7 @@ def temperature(height: int) -> float:
 
     T = 0
     match height:
-        case 0: 
+        case 0:
             T = T_0
         case _ if 0 < height <= H_1:
             T = T_0 + L_0 * height

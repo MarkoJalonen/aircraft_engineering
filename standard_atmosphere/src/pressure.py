@@ -1,5 +1,7 @@
-from constants import H_1, H_2, T_0, P_0, G_0, R, P_1, AIR_EXP
+"""This module salculates the density at given height."""
+
 from math import exp, pow
+from constants import H_1, H_2, T_0, P_0, G_0, R, P_1, AIR_EXP
 from temperature import temperature
 
 def pressure(height: int) -> float:
@@ -18,7 +20,7 @@ def pressure(height: int) -> float:
 
     p = 0
     match height:
-        case 0: 
+        case 0:
             p = P_0
         case _ if 0 < height <= H_1:
             p = P_0 * pow((temperature(height) / T_0), AIR_EXP)
